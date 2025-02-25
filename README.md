@@ -13,8 +13,14 @@ Uma aplicação web para gerenciar o acervo de livros da Etec, permitindo cadast
 1. **Faça um fork do repositório:** https://github.com/Caetanocc/livros_firebase
 2. **Clone o seu repositório para pasta local:**  (a partir do seu usuário)
 3. **Abra o projeto no vscode para editar:** 
-5. **Abra um terminal no vscode e Instale as dependências:** `npm install`
-6. **Inicie o desenvolvimento, execute o comando para testar o projeto:** `npm run dev`
+5. **Abra um terminal no vscode e Instale as dependências:**
+   ```
+   npm install
+   ```
+8. **Inicie o desenvolvimento, execute o comando para testar o projeto:**
+   ```
+    npm run dev
+    ```
 
 ## Scripts
 
