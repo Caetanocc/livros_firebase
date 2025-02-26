@@ -27,7 +27,7 @@ function Book({book}) {
 
                         <button onClick={(e)=>{handleToggleRead(e, book.id)}} className={book.isRead ? 'isRead' : ''}>
                             <i className="fa-solid fa-eye"></i>
-                            <span>{ book.isRead ? "Already Read It" : "Haven't Read it yet" }</span>
+                            <span>{ book.isRead ? "Já lido" : "Não lido" }</span>
                         </button>
                     </div>
 
