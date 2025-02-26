@@ -10,7 +10,7 @@ function SingleBookPage() {
   const navigate = useNavigate();
 
   function handleEraseBook(id) {
-    if(confirm('Are you sure you want to erase this book and all notes associated with it?')){
+    if(confirm('Tem certeza que quer remover esse livro?')){
       dispatch(eraseBook(id));
       dispatch(eraseBookNotes(id));
       navigate("/");
@@ -28,7 +28,7 @@ function SingleBookPage() {
         <div className="container">
             <Link to="/">
               <button className="btn">
-                  ← Back to Books
+                  ← Voltar a lista
               </button>
             </Link>
 
@@ -49,10 +49,10 @@ function SingleBookPage() {
                           onClick={()=>{dispatch(toggleRead(book.id))}}
                           type="checkbox" 
                           defaultChecked={book.isRead} />
-                        <label>{ book.isRead ? "Already Read It" : "Haven't Read it yet" }</label>
+                        <label>{ book.isRead ? "Já lido" : "Não lido" }</label>
                     </div>
                     <div onClick={()=>handleEraseBook(book.id)} className="erase-book">
-                        Erase book
+                        Excluir
                     </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ function SingleBookPage() {
             : 
             
             <div>
-              <p>Book not found. Click the button above to go back to the list of books.</p>
+              <p>Livro não encontrado.</p>
             </div>
 
             }
